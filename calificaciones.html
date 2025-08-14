@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calificaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <a href="login.html" class="nav-link">Cerrar sesión</a>
+        <h1>Calculadora de Calificaciones</h1>
+
+        <div class="grid-container">
+            <div class="materia-card">
+                <input type="text" class="materia-name" id="m1-name" placeholder="Nombre de la Materia 1">
+                <div class="corte-group">
+                    <div class="corte">
+                        <h3>Corte 1 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m1-c1-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m1-c1-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 2 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m1-c2-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m1-c2-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 3 (40%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (20%):</label>
+                            <input type="number" id="m1-c3-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m1-c3-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <div class="final-average">
+                    <h4>Porcentaje Final: <span id="m1-final-percentage">0.00%</span></h4>
+                    <h4>Nota Final: <span id="m1-final-grade">0.00</span></h4>
+                </div>
+            </div>
+            
+            <div class="materia-card">
+                <input type="text" class="materia-name" id="m2-name" placeholder="Nombre de la Materia 2">
+                <div class="corte-group">
+                    <div class="corte">
+                        <h3>Corte 1 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m2-c1-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m2-c1-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 2 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m2-c2-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m2-c2-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 3 (40%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (20%):</label>
+                            <input type="number" id="m2-c3-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m2-c3-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <div class="final-average">
+                    <h4>Porcentaje Final: <span id="m2-final-percentage">0.00%</span></h4>
+                    <h4>Nota Final: <span id="m2-final-grade">0.00</span></h4>
+                </div>
+            </div>
+            
+            <div class="materia-card">
+                <input type="text" class="materia-name" id="m3-name" placeholder="Nombre de la Materia 3">
+                <div class="corte-group">
+                    <div class="corte">
+                        <h3>Corte 1 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m3-c1-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m3-c1-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 2 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m3-c2-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m3-c2-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 3 (40%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (20%):</label>
+                            <input type="number" id="m3-c3-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m3-c3-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <div class="final-average">
+                    <h4>Porcentaje Final: <span id="m3-final-percentage">0.00%</span></h4>
+                    <h4>Nota Final: <span id="m3-final-grade">0.00</span></h4>
+                </div>
+            </div>
+
+            <div class="materia-card">
+                <input type="text" class="materia-name" id="m4-name" placeholder="Nombre de la Materia 4">
+                <div class="corte-group">
+                    <div class="corte">
+                        <h3>Corte 1 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m4-c1-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m4-c1-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 2 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m4-c2-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m4-c2-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 3 (40%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (20%):</label>
+                            <input type="number" id="m4-c3-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m4-c3-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <div class="final-average">
+                    <h4>Porcentaje Final: <span id="m4-final-percentage">0.00%</span></h4>
+                    <h4>Nota Final: <span id="m4-final-grade">0.00</span></h4>
+                </div>
+            </div>
+
+            <div class="materia-card">
+                <input type="text" class="materia-name" id="m5-name" placeholder="Nombre de la Materia 5">
+                <div class="corte-group">
+                    <div class="corte">
+                        <h3>Corte 1 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m5-c1-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m5-c1-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 2 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m5-c2-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m5-c2-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 3 (40%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (20%):</label>
+                            <input type="number" id="m5-c3-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m5-c3-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <div class="final-average">
+                    <h4>Porcentaje Final: <span id="m5-final-percentage">0.00%</span></h4>
+                    <h4>Nota Final: <span id="m5-final-grade">0.00</span></h4>
+                </div>
+            </div>
+
+            <div class="materia-card">
+                <input type="text" class="materia-name" id="m6-name" placeholder="Nombre de la Materia 6">
+                <div class="corte-group">
+                    <div class="corte">
+                        <h3>Corte 1 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m6-c1-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m6-c1-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 2 (30%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (10%):</label>
+                            <input type="number" id="m6-c2-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m6-c2-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                    <div class="corte">
+                        <h3>Corte 3 (40%)</h3>
+                        <div class="grade-item">
+                            <label>Nota 1 (20%):</label>
+                            <input type="number" id="m6-c3-n1" min="1" max="20" step="0.1">
+                        </div>
+                        <div class="grade-item">
+                            <label>Nota 2 (20%):</label>
+                            <input type="number" id="m6-c3-n2" min="1" max="20" step="0.1">
+                        </div>
+                    </div>
+                </div>
+                <div class="final-average">
+                    <h4>Porcentaje Final: <span id="m6-final-percentage">0.00%</span></h4>
+                    <h4>Nota Final: <span id="m6-final-grade">0.00</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const materias = 6;
+            const inputs = [];
+
+            for (let m = 1; m <= materias; m++) {
+                inputs.push(document.getElementById(`m${m}-name`));
+                for (let c = 1; c <= 3; c++) {
+                    inputs.push(document.getElementById(`m${m}-c${c}-n1`));
+                    inputs.push(document.getElementById(`m${m}-c${c}-n2`));
+                }
+            }
+
+            const calculateGrades = () => {
+                for (let m = 1; m <= materias; m++) {
+                    const c1n1 = parseFloat(document.getElementById(`m${m}-c1-n1`).value) || 0;
+                    const c1n2 = parseFloat(document.getElementById(`m${m}-c1-n2`).value) || 0;
+                    const c2n1 = parseFloat(document.getElementById(`m${m}-c2-n1`).value) || 0;
+                    const c2n2 = parseFloat(document.getElementById(`m${m}-c2-n2`).value) || 0;
+                    const c3n1 = parseFloat(document.getElementById(`m${m}-c3-n1`).value) || 0;
+                    const c3n2 = parseFloat(document.getElementById(`m${m}-c3-n2`).value) || 0;
+
+                    const c1Total = (c1n1 * 0.10) + (c1n2 * 0.20);
+                    const c2Total = (c2n1 * 0.10) + (c2n2 * 0.20);
+                    const c3Total = (c3n1 * 0.20) + (c3n2 * 0.20);
+                    
+                    const finalGrade = c1Total + c2Total + c3Total;
+                    const finalPercentage = (finalGrade / 20) * 100;
+
+                    if (finalGrade > 0) {
+                        document.getElementById(`m${m}-final-percentage`).textContent = `${finalPercentage.toFixed(2)}%`;
+                        document.getElementById(`m${m}-final-grade`).textContent = `${finalGrade.toFixed(2)}`;
+                    } else {
+                        document.getElementById(`m${m}-final-percentage`).textContent = `0.00%`;
+                        document.getElementById(`m${m}-final-grade`).textContent = `0.00`;
+                    }
+                }
+                saveData();
+            };
+
+            const saveData = () => {
+                const grades = {};
+                for (let m = 1; m <= materias; m++) {
+                    grades[`m${m}-name`] = document.getElementById(`m${m}-name`).value;
+                    for (let c = 1; c <= 3; c++) {
+                        grades[`m${m}-c${c}-n1`] = document.getElementById(`m${m}-c${c}-n1`).value;
+                        grades[`m${m}-c${c}-n2`] = document.getElementById(`m${m}-c${c}-n2`).value;
+                    }
+                }
+                localStorage.setItem('gradesData', JSON.stringify(grades));
+            };
+
+            const loadData = () => {
+                const grades = JSON.parse(localStorage.getItem('gradesData'));
+                if (grades) {
+                    for (let m = 1; m <= materias; m++) {
+                        document.getElementById(`m${m}-name`).value = grades[`m${m}-name`] || '';
+                        for (let c = 1; c <= 3; c++) {
+                            document.getElementById(`m${m}-c${c}-n1`).value = grades[`m${m}-c${c}-n1`] || '';
+                            document.getElementById(`m${m}-c${c}-n2`).value = grades[`m${m}-c${c}-n2`] || '';
+                        }
+                    }
+                    calculateGrades();
+                }
+            };
+            
+            inputs.forEach(input => input.addEventListener('input', calculateGrades));
+            loadData();
+        });
+    </script>
+</body>
+</html>
