@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <h1>Ingresa la clave</h1>
+        <div class="input-group">
+            <input type="password" id="password-input" placeholder="Clave de acceso">
+            <button onclick="checkPassword()">Acceder</button>
+        </div>
+        <p id="error-message" class="error-message">Clave incorrecta. Inténtalo de nuevo.</p>
+        <div id="access-options" class="access-options">
+            <p>Acceso concedido. ¿Qué deseas ver?</p>
+            <a href="index.html" class="access-btn">Mi Horario</a>
+            <a href="calificaciones.html" class="access-btn">Mis Calificaciones</a>
+        </div>
+    </div>
+    
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('password-input').value;
+            const errorMessage = document.getElementById('error-message');
+            const accessOptions = document.getElementById('access-options');
+            const password = 'miclave123'; // !!! CAMBIA 'miclave123' por tu clave !!!
+
+            if (passwordInput === password) {
+                errorMessage.style.display = 'none';
+                accessOptions.style.display = 'flex';
+                document.getElementById('password-input').style.display = 'none';
+                document.querySelector('.input-group button').style.display = 'none';
+            } else {
+                errorMessage.style.display = 'block';
+            }
+        }
+        
+        document.getElementById('password-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+</body>
+</html>
